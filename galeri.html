@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yayasan ManBelajar Inspirasi Cita</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="vendor/style.css" />
+    <link rel="stylesheet" href="vendor/reverse.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="images/logo/mic-yayasan-logo.svg" alt="Yayasan MIC Logo" />
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link active" aria-current="page" href="#"
+                >Galeri</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="acara-section d-flex align-items-center">
+      <div
+        class="justify-content-center py-5 align-items-center flex-column container"
+      >
+        <div class="text-center mb-4">
+          <h1 class="fw-bold color-blue">Acara Terbaru</h1>
+        </div>
+        <div class="swiper galeriSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-md-6">
+                  <img
+                    src="images/galeri/header.png"
+                    alt="Kegiatan Yayasan"
+                    class="img-fluid rounded"
+                    style="width: 600px; height: auto"
+                  />
+                </div>
+                <!-- Kanan: Gambar -->
+                <div class="col-12 col-md-6 text-start pt-5 pt-md-0">
+                  <h2 class="fw-bold color-blue mb-2">
+                    Workshop Pola Asuh “Orang Tua Hebat”
+                  </h2>
+                  <p class="text-muted">
+                    Sesi interaktif yang menghadirkan psikolog anak dan pendidik
+                    untuk membantu orang tua memahami komunikasi positif dan
+                    membangun kedekatan dengan anak di era digital.
+                  </p>
+                  <div class="mt-5">
+                    <a href="#" class="btn-yayasan-primary me-2"
+                      >Selengkapnya</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-md-6">
+                  <img
+                    src="images/galeri/header.png"
+                    alt="Kegiatan Yayasan"
+                    class="img-fluid rounded"
+                    style="width: 600px; height: auto"
+                  />
+                </div>
+                <!-- Kanan: Gambar -->
+                <div class="col-12 col-md-6 text-start pt-5 pt-md-0">
+                  <h2 class="fw-bold color-blue mb-2">
+                    Workshop Pola Asuh “Orang Tua Hebat”
+                  </h2>
+                  <p class="text-muted">
+                    Sesi interaktif yang menghadirkan psikolog anak dan pendidik
+                    untuk membantu orang tua memahami komunikasi positif dan
+                    membangun kedekatan dengan anak di era digital.
+                  </p>
+                  <div class="mt-5">
+                    <a href="#" class="btn-yayasan-primary me-2"
+                      >Selengkapnya</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navigation -->
+          <div class="swiper-button-prev">
+            <i
+              data-feather="chevron-left"
+              style="height: 24px; width: auto"
+            ></i>
+          </div>
+          <div class="swiper-button-next">
+            <i
+              data-feather="chevron-right"
+              style="height: 24px; width: auto"
+            ></i>
+          </div>
+          <div class="mt-4">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row g-4">
+        <!-- Slide 1 -->
+        <div class="col-12 col-md-6">
+          <div
+            class="activity-card"
+            style="background-image: url('images/home/image1.png')"
+          >
+            <div class="activity-overlay"></div>
+            <div class="activity-content">
+              <div class="activity-date">14 Januari 2026</div>
+              <h3 class="activity-title">Aktivitas 1</h3>
+              <a href="#" class="btn-yayasan-primary btn-activity"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="col-12 col-md-6">
+          <div
+            class="activity-card"
+            style="background-image: url('images/home/image1.png')"
+          >
+            <div class="activity-overlay"></div>
+            <div class="activity-content">
+              <div class="activity-date">10 Desember 2025</div>
+              <h3 class="activity-title">Pelatihan Literasi Digital</h3>
+              <a href="#" class="btn-yayasan-primary btn-activity"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="col-12 col-md-6">
+          <div
+            class="activity-card"
+            style="background-image: url('images/home/image1.png')"
+          >
+            <div class="activity-overlay"></div>
+            <div class="activity-content">
+              <div class="activity-date">01 November 2025</div>
+              <h3 class="activity-title">Beasiswa & Ruang Pemuda</h3>
+              <a href="#" class="btn-yayasan-primary btn-activity"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="col-12 col-md-6">
+          <div
+            class="activity-card"
+            style="background-image: url('images/home/image1.png')"
+          >
+            <div class="activity-overlay"></div>
+            <div class="activity-content">
+              <div class="activity-date">20 Oktober 2025</div>
+              <h3 class="activity-title">Pemberdayaan Perempuan</h3>
+              <a href="#" class="btn-yayasan-primary btn-activity"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="col-12 col-md-6">
+          <div
+            class="activity-card"
+            style="background-image: url('images/home/image1.png')"
+          >
+            <div class="activity-overlay"></div>
+            <div class="activity-content">
+              <div class="activity-date">05 September 2025</div>
+              <h3 class="activity-title">Workshop Komunitas</h3>
+              <a href="#" class="btn-yayasan-primary btn-activity"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- feather icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.2/dist/feather.min.js"></script>
+    <script src="vendor/script.js"></script>
+    <script src="vendor/galeriSwiper.js"></script>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-start">
+          <!-- Kiri: Logo -->
+          <div
+            class="col-12 col-md-3 mb-4 mb-md-0 text-md-start text-center text-mobile-start"
+          >
+            <div class="footer-logo">
+              <img
+                src="images/logo/mic-yayasan-logo-white.svg"
+                alt="Yayasan Logo"
+              />
+            </div>
+          </div>
+
+          <!-- Tengah: Address + Akta -->
+          <div class="col-12 col-md-5 mb-4 mb-md-0">
+            <div class="footer-address">
+              Jl. Tunggul Ametung IVA No. 8 Denpasar, Ubung Kaja,<br />
+              Denpasar Utara, Denpasar, Bali 80116<br />
+              No. Telp.: +62 819 1122 3939<br />
+              Email: care@maribelajar.org
+            </div>
+            <div class="footer-divider"></div>
+            <div>
+              Akta Pendirian Keputusan Menteri<br />
+              C-1051.HT.01.02.TH 2025
+            </div>
+          </div>
+
+          <!-- Kanan: Sosial Media + Hak Cipta -->
+          <div
+            class="col-12 col-md-4 text-md-start text-center d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="mb-2 fw-bold">Terhubung:</div>
+              <div
+                class="d-flex justify-content-md-start justify-content-center align-items-center social-icons"
+              >
+                <a href="#" class="d-inline-block" aria-label="LinkedIn">
+                  <i data-feather="linkedin"></i>
+                </a>
+                <a href="#" class="d-inline-block" aria-label="Instagram">
+                  <i data-feather="instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer bawah -->
+            <div class="mt-5">© MariBelajar 2025. All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

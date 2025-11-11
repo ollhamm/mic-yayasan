@@ -1,44 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".mySwiper", {
-    // Basic
-    loop: true,
-    spaceBetween: 16,
-    slidesPerView: 1.1,
-    centeredSlides: false,
-
-    // Pagination
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    // Navigation
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // Responsive breakpoints
-    breakpoints: {
-      640: {
-        slidesPerView: 1.3,
-        spaceBetween: 16,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
-    },
-  });
-  if (window.feather && typeof window.feather.replace === "function") {
-    window.feather.replace();
-  }
-
-  // NAVBAR: show/hide on scroll (smooth slide from top)
   (function () {
     const nav = document.querySelector(".navbar");
     if (!nav) return;
@@ -94,4 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { passive: true }
     );
   })();
+  if (window.feather && typeof window.feather.replace === "function") {
+    window.feather.replace();
+  }
 });

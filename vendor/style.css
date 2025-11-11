@@ -285,6 +285,10 @@ body.has-fixed-navbar {
   padding: 1rem 0 2rem;
 }
 
+.acara-section .swiper {
+  padding: 1rem 0 2rem;
+}
+
 .activity-card {
   position: relative;
   width: 100%;
@@ -354,7 +358,6 @@ body.has-fixed-navbar {
     width: 360px;
   }
 
-  /* Swiper navigation buttons using feather icons */
   .swiper-button-prev,
   .swiper-button-next {
     width: 44px;
@@ -376,16 +379,6 @@ body.has-fixed-navbar {
   background-color: #f0f0f0;
 }
 
-/* Position tweaks so buttons sit just outside the carousel on larger screens */
-@media (min-width: 768px) {
-  .swiper-button-prev {
-    left: -22px;
-  }
-  .swiper-button-next {
-    right: -22px;
-  }
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after,
 .swiper-button-prev::before,
@@ -394,11 +387,9 @@ body.has-fixed-navbar {
   content: none !important;
 }
 
-.mySwiper,
 .gallery-section .swiper {
   position: relative;
   z-index: 1;
-  overflow: visible !important;
 }
 
 .mySwiper .swiper-wrapper,
