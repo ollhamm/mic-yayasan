@@ -12,11 +12,14 @@ body {
   color: var(--color-gold) !important;
 }
 
+.bg-gold {
+  background-color: var(--color-gold) !important;
+}
+
 .color-blue {
   color: var(--color-blue) !important;
 }
 
-/* Sticky navbar show/hide styles */
 :root {
   --navbar-height: 72px;
 }
@@ -45,6 +48,27 @@ body {
 /* When navbar is fixed, give the page top spacing equal to navbar height */
 body.has-fixed-navbar {
   padding-top: var(--navbar-height);
+}
+
+.title-content {
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .title-content {
+    font-size: 2rem;
+    max-width: 650px;
+  }
+}
+
+/* Handphone (≤ 576px) */
+@media (max-width: 576px) {
+  .title-content {
+    font-size: 2rem;
+    max-width: 90%;
+  }
 }
 
 .navbar {

@@ -1,0 +1,119 @@
+.programs-container {
+  width: 100%;
+}
+
+.program-section {
+  width: 100%;
+  position: relative;
+}
+
+.programs-container .program-section:nth-of-type(odd) .row {
+  flex-direction: row;
+}
+
+.programs-container .program-section:nth-of-type(odd) .program-image {
+  text-align: end;
+}
+
+.programs-container .program-section:nth-of-type(even) .row {
+  flex-direction: row-reverse;
+}
+
+.programs-container .program-section:nth-of-type(even) .program-image {
+  text-align: start;
+}
+
+.photo-stack {
+  position: relative;
+  display: inline-block;
+}
+
+.photo {
+  width: 85%;
+  border-radius: 15px;
+}
+
+.programs-container .program-section:nth-of-type(odd) .photo-front {
+  position: relative;
+  transform: rotate(3deg);
+  z-index: 2;
+}
+
+.programs-container .program-section:nth-of-type(odd) .photo-back {
+  position: absolute;
+  top: -80px;
+  left: -24px;
+  transform: rotate(-6deg);
+  z-index: 0;
+}
+
+.programs-container .program-section .photo-front {
+  position: relative;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+
+.programs-container .program-section:nth-of-type(even) .photo-back {
+  position: absolute;
+  top: -80px;
+  right: -24px;
+  left: auto;
+  transform: rotate(6deg);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .photo {
+    width: 90%;
+  }
+
+  .programs-container .program-section:nth-of-type(odd) .photo-back {
+    top: -20px;
+    left: 15px;
+  }
+
+  .programs-container .program-section:nth-of-type(even) .photo-back {
+    top: -20px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .photo {
+    width: 95%;
+  }
+
+  .programs-container .program-section:nth-of-type(odd) .photo-back {
+    top: -15px;
+    left: 10px;
+  }
+
+  .programs-container .program-section:nth-of-type(even) .photo-back {
+    top: -15px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .programs-container .program-section:nth-of-type(odd) .row,
+  .programs-container .program-section:nth-of-type(even) .row {
+    flex-direction: column !important;
+  }
+
+  .programs-container .program-section:nth-of-type(odd) .program-image,
+  .programs-container .program-section:nth-of-type(even) .program-image {
+    text-align: center !important;
+  }
+
+  .programs-container .program-section:nth-of-type(odd) .photo-front,
+  .programs-container .program-section:nth-of-type(even) .photo-front {
+    transform: rotate(3deg);
+  }
+
+  .programs-container .program-section:nth-of-type(odd) .photo-back,
+  .programs-container .program-section:nth-of-type(even) .photo-back {
+    left: 10px;
+    right: auto;
+    transform: rotate(-6deg);
+  }
+}
