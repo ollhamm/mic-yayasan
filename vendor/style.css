@@ -660,7 +660,7 @@ body.has-fixed-navbar {
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  border: 10px solid var(--color-blue);
+  border: 8px solid var(--color-blue);
   display: flex;
   z-index: 2;
   align-items: center;
