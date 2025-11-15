@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yayasan ManBelajar Inspirasi Cita</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="vendor/style.css" />
+    <link rel="stylesheet" href="vendor/reverse.css" />
+    <link rel="stylesheet" href="vendor/accordion-button.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="images/logo/mic-yayasan-logo.svg" alt="Yayasan MIC Logo" />
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                class="nav-link"
+                href="tentang-kami.html"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="kontakDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kontak Kami
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-start rounded"
+                aria-labelledby="kontakDropdown"
+              >
+                <li class="mb-2 mt-2">
+                  <a
+                    class="color-blue nav-link dropdown-item"
+                    href="https://wa.me/6281911223939"
+                    target="_blank"
+                  >
+                    <img
+                      src="images/icons/whatsapp.svg"
+                      alt="WhatsApp Icon"
+                      class="me-2"
+                      style="height: 24px; width: auto"
+                    />
+                    WhatsApp
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="dropdown-item nav-link"
+                    href="mailto:care@maribelajar.org"
+                  >
+                    <img
+                      src="images/icons/email.svg"
+                      alt="email Icon"
+                      class="me-2"
+                      style="height: 24px; width: auto"
+                    />
+                    Email
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item nav-link" href="tel:+6281911223939">
+                    <img
+                      src="images/icons/phone.svg"
+                      alt="Phone Icon"
+                      class="me-2"
+                      style="height: 24px; width: auto"
+                    />
+                    Telepon
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="w-100 position-relative"
+      style="height: 260px; overflow: hidden"
+    >
+      <!-- Gambar -->
+      <img
+        src="images/program/header.png"
+        alt="Header Image"
+        class="w-100 img-fluid"
+        style="height: 260px; object-fit: cover"
+      />
+
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: rgba(0, 0, 0, 0.6)"
+      ></div>
+
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center text-white"
+        style="z-index: 2"
+      >
+        <h2 class="fw-bold text-white w-100 text-uppercase">TENTANG KAMI</h2>
+      </div>
+    </div>
+
+    <section class="programs-container py-5 my-5">
+      <div
+        class="program-section d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container px-5">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-6 text-center text-md-start pt-5">
+              <div>
+                <img
+                  src="images/logo/mic-yayasan-logo-about-me.svg"
+                  alt="Kegiatan Yayasan"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h1 class="fw-bold color-blue mb-2">
+                Yayasan MariBelajar Inspirasi Cita
+              </h1>
+              <p class="text-muted">
+                Karena setiap langkah kecil menuju cita adalah bagian dari asa
+                yang besar — dan kita bisa mencapainya bersama.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="visi-misi-section position-relative">
+      <!-- Visi Section with Background -->
+      <div
+        class="visi-bg-section"
+        style="
+          background-image: url('images/bg-misi.svg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-top: 80px;
+          padding-bottom: 200px;
+        "
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center text-white">
+              <h1 class="fw-bold color-gold mb-2">Visi</h1>
+              <p class="px-3" style="max-width: 900px; margin: 0 auto">
+                Menjadi katalisator terdepan dalam penciptaan ekosistem
+                pemberdayaan yang inklusif dan inovatif di Bali, di mana setiap
+                individu, terutama perempuan, anak, dan pemuda, memiliki
+                kesempatan setara untuk menggapai cita-cita dan meraih asa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Misi Section - Positioned Absolutely -->
+      <div
+        class="container position-relative"
+        style="margin-top: -150px; z-index: 10"
+      >
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="misi-container bg-white rounded-4 p-4 p-md-5">
+              <h1 class="fw-bold text-center color-blue mb-3">Misi</h1>
+
+              <div class="row g-4 justify-content-center">
+                <!-- Misi 1 -->
+                <div class="col-12 col-md-4 position-relative">
+                  <div class="misi-item text-center h-100 pb-3">
+                    <div
+                      class="misi-number rounded-circle color-blue d-flex align-items-center justify-content-center mx-auto mb-3"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: #e9ecef;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                      "
+                    >
+                      1
+                    </div>
+                    <p class="misi-text color-blue text-start">
+                      Menyelenggarakan program pemberdayaan holistik bagi
+                      perempuan dan anak untuk meningkatkan ketahanan ekonomi
+                      dan sosial, serta membuka akses terhadap pendidikan
+                      berkualitas.
+                    </p>
+                  </div>
+
+                  <!-- Divider kanan desktop -->
+                  <div class="divider-right d-none d-md-block"></div>
+                </div>
+
+                <!-- Misi 2 -->
+                <div class="col-12 col-md-4 position-relative">
+                  <div class="misi-item text-center h-100 pb-3">
+                    <div
+                      class="misi-number rounded-circle color-blue d-flex align-items-center justify-content-center mx-auto mb-3"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: #e9ecef;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                      "
+                    >
+                      2
+                    </div>
+                    <p
+                      class="misi-text color-blue text-start"
+                      style="line-height: 1.5"
+                    >
+                      Membuka akses pendidikan tinggi dan pengembangan karir
+                      bagi pemuda Bali melalui penyediaan beasiswa yang
+                      berkelanjutan dan ruang kerja kolaboratif yang inovatif.
+                    </p>
+                  </div>
+
+                  <!-- Divider kanan desktop -->
+                  <div class="divider-right d-none d-md-block"></div>
+                </div>
+
+                <!-- Misi 3 -->
+                <div class="col-12 col-md-4">
+                  <div class="misi-item text-center h-100 pb-3">
+                    <div
+                      class="misi-number rounded-circle color-blue d-flex align-items-center justify-content-center mx-auto mb-3"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: #e9ecef;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                      "
+                    >
+                      3
+                    </div>
+                    <p
+                      class="misi-text color-blue text-start"
+                      style="line-height: 1.5"
+                    >
+                      Meningkatkan kecakapan, etika, dan keamanan digital
+                      masyarakat Bali melalui program pendidikan literasi
+                      digital yang relevan dan mudah diakses, guna menghadapi
+                      tantangan dan memanfaatkan peluang di era digital.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-bottom: 100px"></div>
+    </section>
+
+    <!-- Nilai-nilai Section -->
+    <section class="container justify-content-center py-5">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold color-blue mb-4">Nilai-nilai</h1>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Nilai 1: Inspirasi -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="nilai-wrapper">
+            <div class="nilai-header">
+              <h5>Dampak Berkelanjutan</h5>
+            </div>
+
+            <div class="nilai-content">
+              <p>
+                Merancang program yang tidak hanya memberikan bantuan sesaat,
+                tetapi juga membangun kapasitas dan kemandirian jangka panjang
+                bagi penerima manfaat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nilai 2: Kolaborasi -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="nilai-wrapper">
+            <div class="nilai-header">
+              <h5>Kolaborasi</h5>
+            </div>
+
+            <div class="nilai-content">
+              <p>
+                Membangun kemitraan yang kuat dengan berbagai pihak untuk
+                menciptakan dampak yang lebih luas dan berkelanjutan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nilai 3: Integritas -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="nilai-wrapper">
+            <div class="nilai-header">
+              <h5>Integritas</h5>
+            </div>
+
+            <div class="nilai-content">
+              <p>
+                Menjalankan seluruh kegiatan dengan standar etika, transparansi,
+                dan akuntabilitas tertinggi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nilai 4: Inovasi -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="nilai-wrapper">
+            <div class="nilai-header">
+              <h5>Inovasi</h5>
+            </div>
+
+            <div class="nilai-content">
+              <p>
+                Terus mencari cara-cara baru dan kreatif untuk menjawab
+                tantangan sosial yang berkembang.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nilai 5: Dampak Berkelanjutan -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="nilai-wrapper">
+            <div class="nilai-header">
+              <h5>Dampak Berkelanjutan</h5>
+            </div>
+
+            <div class="nilai-content">
+              <p>
+                Merancang program yang tidak hanya memberikan bantuan sesaat,
+                tetapi juga membangun kapasitas dan kemandirian jangka panjang
+                bagi penerima manfaat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tim kami -->
+    <section class="container py-5">
+      <h1 class="fw-bold text-center color-blue">Tim Kami</h1>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-wrapper">
+            <div class="team-circle">
+              <img src="/images/teams/user1.png" alt="Team" />
+            </div>
+          </div>
+          <h4 class="text-center fw-bold color-blue mt-2">Nama</h4>
+          <p class="text-center text-blue">Bendahara</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-wrapper">
+            <div class="team-circle">
+              <img src="/images/teams/user1.png" alt="Team" />
+            </div>
+          </div>
+          <h4 class="text-center fw-bold color-blue mt-2">Nama</h4>
+          <p class="text-center text-blue">Bendahara</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-wrapper">
+            <div class="team-circle">
+              <img src="/images/teams/user1.png" alt="Team" />
+            </div>
+          </div>
+          <h4 class="text-center fw-bold color-blue mt-2">Nama</h4>
+          <p class="text-center text-blue">Bendahara</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-wrapper">
+            <div class="team-circle">
+              <img src="/images/teams/user1.png" alt="Team" />
+            </div>
+          </div>
+          <h4 class="text-center fw-bold color-blue mt-2">Nama</h4>
+          <p class="text-center text-blue">Bendahara</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- feather icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.2/dist/feather.min.js"></script>
+    <script src="vendor/script.js"></script>
+    <script src="vendor/accordion-button.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-start">
+          <!-- Kiri: Logo -->
+          <div
+            class="col-12 col-md-3 mb-4 mb-md-0 text-md-start text-center text-mobile-start"
+          >
+            <div class="footer-logo">
+              <img
+                src="images/logo/mic-yayasan-logo-white.svg"
+                alt="Yayasan Logo"
+              />
+            </div>
+          </div>
+
+          <!-- Tengah: Address + Akta -->
+          <div class="col-12 col-md-5 mb-4 mb-md-0">
+            <div class="footer-address">
+              Jl. Tunggul Ametung IVA No. 8 Denpasar, Ubung Kaja,<br />
+              Denpasar Utara, Denpasar, Bali 80116<br />
+              No. Telp.: +62 819 1122 3939<br />
+              Email: care@maribelajar.org
+            </div>
+            <div class="footer-divider"></div>
+            <div>
+              Akta Pendirian Keputusan Menteri<br />
+              C-1051.HT.01.02.TH 2025
+            </div>
+          </div>
+
+          <!-- Kanan: Sosial Media + Hak Cipta -->
+          <div
+            class="col-12 col-md-4 text-md-start text-center d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="mb-2 fw-bold">Terhubung:</div>
+              <div
+                class="d-flex justify-content-md-start justify-content-center align-items-center social-icons"
+              >
+                <a href="#" class="d-inline-block" aria-label="LinkedIn">
+                  <i data-feather="linkedin"></i>
+                </a>
+                <a href="#" class="d-inline-block" aria-label="Instagram">
+                  <i data-feather="instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer bawah -->
+            <div class="mt-5">© MariBelajar 2025. All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

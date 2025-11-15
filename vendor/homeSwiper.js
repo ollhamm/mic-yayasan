@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".homeSwiper", {
     loop: true,
     spaceBetween: 16,
-    slidesPerView: 6,
+    slidesPerView: 1,
+
     centeredSlides: true,
 
     pagination: {
@@ -17,20 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       640: {
-        slidesPerView: 1.3,
-        spaceBetween: 16,
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 20,
       },
       992: {
         slidesPerView: 3,
-        spaceBetween: 24,
       },
     },
   });
-  if (window.feather && typeof window.feather.replace === "function") {
-    window.feather.replace();
-  }
 });
